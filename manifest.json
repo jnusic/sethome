@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Sethome",
+  "description": "Personalized Google Chrome Homepage",
   "version": "1.0",
 
   "browser_action": {
@@ -11,6 +11,7 @@
   },
   "permissions": [
     "activeTab",
+    "storage",
     "https://ajax.googleapis.com/"
   ],
    "chrome_url_overrides" : {
