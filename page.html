@@ -1,0 +1,100 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Sethome</title>
+  <style>
+     body {
+    margin: 0;
+    padding: 0;
+    background-color: #27243F;
+  }
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+  /* ---- particles.js container ---- */
+  canvas {
+      display: block;
+      vertical-align: bottom;
+  }
+
+  h1 {
+    margin: auto;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    font-size: 10em;
+    margin: auto auto 0 auto;
+  }
+
+  #bg {
+    background: radial-gradient(ellipse 150% 100% at 50% 100%, rgba(82,42,84,1) 0%, #27243F 35%, #27243F 50%, #253A4A 75%, #27243F 95%, #27243F 100%);
+    
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment:fixed;
+  }
+  #time {
+    font-size: 5em;
+    display: flex;
+    margin: 0 auto auto auto;
+    color: white;
+  }
+  .banner {
+    height: 50vh;
+    width: 66vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 25vh auto 0 auto;
+  }
+  .line {
+    width:33vw;
+    height: 2px;
+    background-color: white;
+    margin: 2px auto 2px auto;
+  }
+  .particles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: -1;
+   
+      background: transparent;
+  }
+  </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+     <script src="postpopup.js"></script>
+  </head>
+  <body>
+    <div class="particles" id="bg"></div>
+    <div class="particles" id="particles-js-bg-static"></div>
+    <div class="particles" id="particles-js-bg-animated"></div>
+    <div class="particles" id="particles-js-constellations"></div>
+
+    <div class="banner">
+      <h1 id="title">Hello,     Jesus</h1>
+      <div class="line"></div>
+      <div id="time"></div>
+    </div>
+  </body>
+  <footer>
+     <script src="particles.min.js"></script>
+     <script src="particles.js"></script>
+     <script src="time.js"></script>
+  </footer>
+</html>

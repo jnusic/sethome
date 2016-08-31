@@ -13,9 +13,11 @@
         font-size: 100%;
       }
       .body_container {
-        height: 400px;
+        height: 100px;
         width: 300px;
         background-color: white;
+        display: flex; 
+        flex-direction:row;
       }
       #status {
         /* avoid an excessively wide status text */
@@ -32,11 +34,17 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
+     <script type="popup.js"></script>
   </head>
   <body>
     <div class="body_container">
-      <input type="text">
+      <input id="text" type="text" style="display:flex">
+      <button style="display:flex" id="button">Fuck You</button>
     </div>
   </body>
+
+  <Footer>
+    <script src="popup.js"></script>
+  </Footer>
 </html>
 

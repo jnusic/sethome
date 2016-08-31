@@ -15,6 +15,6 @@
     "https://ajax.googleapis.com/"
   ],
    "chrome_url_overrides" : {
-    "newtab": "test.html"
+    "newtab": "page.html"
   }
 }
