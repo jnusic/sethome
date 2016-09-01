@@ -14,5 +14,7 @@ chrome.storage.sync.get(['value'], function(item) {
 
   chrome.storage.sync.set({'value': theValue}, function(){
     console.log("The name is" + theValue); 
-  		})
-  	};
+    document.getElementById('button').innerHTML = "Saved";
+    document.getElementById('button').style.textDecoration = "underline";
+  	});
+  }

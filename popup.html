@@ -40,7 +40,7 @@
       .line {
         height: 2px;
         background-color: #E0E0E0;
-        width: 10vw;
+        width: 50px;
         float: left;
         margin-left: 3px;
       }
@@ -55,6 +55,22 @@
         display: flex;
         float: left;
         margin: auto 0 auto 6px;
+      }
+      .save_button {
+        display: flex;
+        flex-grow: 1;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        align-items: center;
+        margin: 6vh auto 6vh auto;
+        padding: 0vh 12vw;
+        border-radius: 3px;
+        border: 2px solid #81c784;
+        cursor: pointer;
+      }
+      .save_button:hover {
+        border: 2px solid #388E3C;
       }
       #status {
         /* avoid an excessively wide status text */
@@ -81,10 +97,10 @@
         <div class="title">Name:</div>
         <div class="line"></div>
       </div>
-      <div class="input_container" style="display:none">
+      <div class="input_container" style="display:flex;margin:6px">
         <input id="text" type="text" style="display:flex">
-        <button style="display:flex" id="button">Apply</button>
       </div>
+      <div class="save_button" id="button">Save</div>
     </div>
   </body>
 
