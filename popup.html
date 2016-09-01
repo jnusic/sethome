@@ -11,20 +11,56 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        margin: 0;
       }
       .body_container {
-        height: 100px;
+        height: 150px;
         width: 300px;
         background-color: white;
         display: flex; 
+        flex-direction:column;
+      }
+      .header_container{
+        display: flex;
+        background-color: #E0E0E0;
+        height: 40px;
+      }
+      .header_text{
+        display: block;
+        float: left;
+        background-color: #E0E0E0;
+        font-size: 1.25em;
+        color: #9E9E9E;
+        margin: auto 0 auto 6px;
+      }
+      .input_container {
+        display: flex;
         flex-direction:row;
+      }
+      .line {
+        height: 2px;
+        background-color: #E0E0E0;
+        width: 10vw;
+        float: left;
+        margin-left: 3px;
+      }
+      .title_container {
+        display: flex;
+        height: 30px;
+        flex-direction:column;
+      }
+      .title {
+        font-size: 1em;
+        color: #212121;
+        display: flex;
+        float: left;
+        margin: auto 0 auto 6px;
       }
       #status {
         /* avoid an excessively wide status text */
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 400px;
       }
     </style>
 
@@ -38,8 +74,17 @@
   </head>
   <body>
     <div class="body_container">
-      <input id="text" type="text" style="display:flex">
-      <button style="display:flex" id="button">Fuck You</button>
+      <div class="header_container">  
+        <div class="header_text">Customize</div>
+      </div>
+      <div class="title_container">
+        <div class="title">Name:</div>
+        <div class="line"></div>
+      </div>
+      <div class="input_container" style="display:none">
+        <input id="text" type="text" style="display:flex">
+        <button style="display:flex" id="button">Apply</button>
+      </div>
     </div>
   </body>
 
